@@ -144,12 +144,13 @@ static void add_columns (GtkTreeView *treeview) {
 
 static void about_btn_clicked(GtkButton *button, gpointer user_data) {
     GtkWidget *dialog;
-    const gchar *website = "https://github.com/Ta180m/zenmonitor3";
+    const gchar *website = "https://github.com/Sylixe/zenmonitor3";
     const gchar *msg = "<b>Zenmonitor3</b> %s\n"
                        "Zenmonitor3 is monitoring software for AMD Zen-based CPUs, now with Zen 3 support!\n"
                        "<a href=\"%s\">%s</a>\n\n"
                        "Created by: Ondrej Čerman\n"
-                       "Fork by: Anthony Wang";
+                       "Fork by: Anthony Wang\n"
+                       "Fixed build by: Sylixe";
 
     dialog = gtk_message_dialog_new_with_markup(GTK_WINDOW (window),
                                     GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
