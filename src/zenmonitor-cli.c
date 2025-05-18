@@ -52,8 +52,9 @@ static SensorSource sensor_sources[] = {
     }
 };
 
-void flush_to_csv()
+void flush_to_csv(int sig)
 {
+    (void)sig;
     FILE *csv;
     csv = fopen(file, "w");
     guint i = 0;
